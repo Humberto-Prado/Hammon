@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>HAMMON</title>
+
+</head>
+<body>
+   
+    <header>
+        <h1>
+            HAMMON
+        </h1>
+    </header>
+
+    <main>
+        
+        <section id="charA">
+            <section>
+                
+                <h2>
+                    Character Build A
+                </h2>
+                
+                <label for="name1">                    
+                    <input name="name1" type="text" class="name" id="name1" minlength="3" maxlength="12" autocomplete="off" required value="" placeholder="Your name?"><br>
+                </label>
+                <br>
+                <button type="button" id="submitNameButton" value="" class="button" onclick="submitName()">Submit Name</button>
+
+            </section>
+
+            <hr>
+            
+            <section id="displayColors">
+
+                <Label for="skillcap">skillcap</Label>
+                <input name="skillcap"  value="6" title="skillcap" type="number" class="skillcap" min="0" max="6" maxlength="1" id="skillcap" readonly>
+                <input type="range" value="6" id="skillCapRange" min="0" max="6" disabled>
+                <br><br>
+                <label for="displayRed1"></label>
+                <input name="displayRed1" value="0" title="displayRed1" type="number" class="skill" min="0" max="6" maxlength="1" id="displayRed1" readonly required placeholder="0">
+                
+                <button type="button" id="red1-button" class="minusButtons" onclick="minusred ()" disabled: true>-</button>
+                <button type="button" id="red1+button" class="plusButtons" onclick="plusred ()" disabled: false>+</button>
+                <input type="range" id="redRange" value="" readonly min="0" max="6" disabled>
+                <br>
+                <label for="displayGreen1"></label>
+                <input name="displayGreen1" value="0"  type="number" class="skill" min="0" max="6" maxlength="1" id="displayGreen1" readonly required placeholder="0">
+                
+                <button type="button" id="green1-button" class="minusButtons" onclick="minusgreen ()" disabled: true>-</button>
+                <button type="button" id="green1+button" class="plusButtons" onclick="plusgreen ()">+</button>
+                <input type="range" id="greenRange" value="0" readonly min="0" max="6" disabled>
+                <br>
+                <label for="displayBlue1"></label>
+                <input name="displayBlue1" value="0" type="number" class="skill" min="0" max="6" maxlength="1" id="displayBlue1" readonly required placeholder="0">
+
+                <button type="button" id="blue1-button" class="minusButtons" onclick="minusblue ()" disabled: true>-</button>
+                <button type="button" id="blue1+button" class="plusButtons" onclick="plusblue ()">+</button>
+                <input type="range" id="blueRange" value="0" readonly min="0" max="6" disabled>
+                <br><br>
+                
+                <button type="button" id="submitSkills" class="submitbuttons" onclick="submitSkills ()">Submit Skills</button>
+
+            </section>
+            <hr>
+            <section>
+
+                <label for="displayName1">Name:</label>
+                <br>
+                <input name="displayName1" type="text" class="submitedDisplayName" id="displayName1" readonly value="">
+                <br><br>
+                
+                <label for="submitedred1">Red:</label>
+                <input name="submitedred1" type="number"  class="submitedDisplay" id="submitedred1" readonly value="">
+
+                
+                <label for="submitedgreen1">Green:</label>
+                <input name="submitedgreen1" type="number"  class="submitedDisplay" id="submitedgreen1" readonly value="">
+
+                
+                <label for="submitedblue1">Blue:</label>
+                <input name="submitedblue1" type="number" class="submitedDisplay"  id="submitedblue1" readonly value="">
+                <br><br>
+                <label for="className">Class:</label>
+                <br>
+                <input name="className" type="text" id="className"  class="submitedDisplayClass" readonly value=''>
+
+            </section>
+        </section>
+
+        <section id="charB">
+
+            <section>
+            
+                <h2>
+                    Character Build B
+                </h2>
+                   
+                <label for="name2">                    
+                    <input name="name2" type="text" class="name" id="name2" minlength="3" maxlength="12" autocomplete="off" required value="" placeholder="Your name?"><br>
+                </label>
+                <br>
+                <button type="button" id="submitNameButton2" value="" class="button" onclick="submitName2()">Submit Name</button>
+    
+            </section>
+    
+            <hr>
+            
+            <section id="displayColors">
+    
+                <Label for="skillcap2">skillcap</Label>
+                <input name="skillcap2"  value="6" title="skillcap2" type="number" class="skillcap2" min="0" max="6" maxlength="1" id="skillcap2" readonly>
+                <input type="range" value="6" id="skillCapRange2" range="6" min="0" max="6" disabled>
+                <br><br>
+                <label for="displayRed2"></label>
+                <input name="displayRed2" value="0" title="displayRed2" type="number" class="skill" min="0" max="6" maxlength="1" id="displayRed2" readonly required placeholder="0">
+                
+                <button type="button" id="red2-button" class="minusButtons" onclick="minusred2 ()" disabled: true>-</button>
+                <button type="button" id="red1+button" class="plusButtons" onclick="plusred2 ()" disabled: false>+</button>
+                <input type="range" id="redRange2" value="" readonly min="0" max="6" disabled>
+                <br>
+                <label for="displayGreen2"></label>
+                <input name="displayGreen2" value="0"  type="number" class="skill" min="0" max="6" maxlength="1" id="displayGreen2" readonly required placeholder="0">
+                
+                <button type="button" id="green2-button" class="minusButtons" onclick="minusgreen2 ()" disabled: true>-</button>
+                <button type="button" id="green2+button" class="plusButtons" onclick="plusgreen2 ()">+</button>
+                <input type="range" id="greenRange2" value="0" readonly min="0" max="6" disabled>
+                <br>
+                <label for="displayBlue2"></label>
+                <input name="displayBlue2" value="0" type="number" class="skill" min="0" max="6" maxlength="1" id="displayBlue2" readonly required placeholder="0">
+    
+                <button type="button" id="blue2-button" class="minusButtons" onclick="minusblue2 ()" disabled: true>-</button>
+                <button type="button" id="blue2+button" class="plusButtons" onclick="plusblue2 ()">+</button>
+                <input type="range" id="blueRange2" value="0" readonly min="0" max="6" disabled>
+                <br><br>
+                
+                <button type="button" id="submitSkills2" class="submitbuttons" onclick="submitSkills2 ()">Submit Skills</button>
+    
+            </section>
+            <hr>
+            <section>
+    
+                <label for="displayname2">Name:</label>
+                <br>
+                <input name="displayname2" type="text" class="submitedDisplayName" id="displayname2" readonly value="">
+                <br><br>
+                
+                <label for="submitedred2">Red:</label>
+                <input name="submitedred2" type="number"  class="submitedDisplay" id="submitedred2" readonly value="">
+    
+                
+                <label for="submitedgreen2">Green:</label>
+                <input name="submitedgreen2" type="number"  class="submitedDisplay" id="submitedgreen2" readonly value="">
+    
+                
+                <label for="submitedblue2">Blue:</label>
+                <input name="submitedblue2" type="number" class="submitedDisplay"  id="submitedblue2" readonly value="">
+                <br><br>
+                <label for="className">Class:</label>
+                <br>
+                <input name="className2" type="text" id="className2"  class="submitedDisplayClass" readonly value=''>
+    
+            </section>
+
+        </section>
+
+        <section id="resume">
+
+            <input type="number" id="charAlife" maxlength="1" class="life" value=6 readonly>
+            <input type="number" id="charBlife" maxlength="1" class="life" value=6 readonly> <br>
+
+            <div id="redDices">
+                <input type="number" id="redDice1"  maxlength="1" class="redDice" value= 0 readonly>
+                <input type="number" id="redDice2"  maxlength="1" class="redDice" value= 0 readonly>
+                <input type="number" id="redDice3"  maxlength="1" class="redDice" value= 0 readonly>
+                <input type="number" id="redDice4"  maxlength="1" class="redDice" value= 0 readonly>
+                <input type="number" id="redDice5"  maxlength="1" class="redDice" value= 0 readonly>
+                <input type="number" id="redDice6"  maxlength="1" class="redDice" value= 0 readonly>
+                <input type="number" id="redASuccess" class="success" maxlength="1" value= 0 readonly>
+                <input type="number" id="redAsuper" class="ss" maxlength="1" value= 0 readonly>
+
+
+            </div>
+
+            <div id="redBDices">
+                <input type="number" id="redBDice1"  maxlength="1" class="redBDice" value= 0 readonly>
+                <input type="number" id="redBDice2"  maxlength="1" class="redBDice" value= 0 readonly>
+                <input type="number" id="redBDice3"  maxlength="1" class="redBDice" value= 0 readonly>
+                <input type="number" id="redBDice4"  maxlength="1" class="redBDice" value= 0 readonly>
+                <input type="number" id="redBDice5"  maxlength="1" class="redBDice" value= 0 readonly>
+                <input type="number" id="redBDice6"  maxlength="1" class="redBDice" value= 0 readonly>
+                <input type="number" id="redBSuccess" class="success" maxlength="1" value= 0 readonly>
+                <input type="number" id="redBsuper" class="ss" maxlength="1" value= 0 readonly>
+            </div>
+
+            <hr>
+
+            <div id="greenDices">
+                <input type="number" id="greenDice1"  maxlength="1" class="greenDice" value= 0 readonly>
+                <input type="number" id="greenDice2"  maxlength="1" class="greenDice" value= 0 readonly>
+                <input type="number" id="greenDice3"  maxlength="1" class="greenDice" value= 0 readonly>
+                <input type="number" id="greenDice4"  maxlength="1" class="greenDice" value= 0 readonly>
+                <input type="number" id="greenDice5"  maxlength="1" class="greenDice" value= 0 readonly>
+                <input type="number" id="greenDice6"  maxlength="1" class="greenDice" value= 0 readonly>
+                <input type="number" id="greenASuccess" class="success" maxlength="1" value= 0 readonly>
+                <input type="number" id="greenAsuper" class="ss" maxlength="1" value= 0 readonly>
+            </div>
+
+            <div id="redBDices">
+                <input type="number" id="greenBDice1"  maxlength="1" class="greenBDice" value= 0 readonly>
+                <input type="number" id="greenBDice2"  maxlength="1" class="greenBDice" value= 0 readonly>
+                <input type="number" id="greenBDice3"  maxlength="1" class="greenBDice" value= 0 readonly>
+                <input type="number" id="greenBDice4"  maxlength="1" class="greenBDice" value= 0 readonly>
+                <input type="number" id="greenBDice5"  maxlength="1" class="greenBDice" value= 0 readonly>
+                <input type="number" id="greenBDice6"  maxlength="1" class="greenBDice" value= 0 readonly>
+                <input type="number" id="greenBSuccess" class="success" maxlength="1" value= 0 readonly>
+                <input type="number" id="greenBsuper" class="ss" maxlength="1" value= 0 readonly>
+            </div>
+           
+<hr>
+
+            <div id="blueDices">
+                <input type="number" id="blueDice1"  maxlength="1" class="blueDice" value= 0 readonly>
+                <input type="number" id="blueDice2"  maxlength="1" class="blueDice" value= 0 readonly>
+                <input type="number" id="blueDice3"  maxlength="1" class="blueDice" value= 0 readonly>
+                <input type="number" id="blueDice4"  maxlength="1" class="blueDice" value= 0 readonly>
+                <input type="number" id="blueDice5"  maxlength="1" class="blueDice" value= 0 readonly>
+                <input type="number" id="blueDice6"  maxlength="1" class="blueDice" value= 0 readonly>
+                <input type="number" id="blueASuccess" class="success" maxlength="1" value= 0 readonly>
+                <input type="number" id="blueAsuper" class="ss" maxlength="1" value= 0 readonly>
+            </div>
+
+            <div id="redBDices">
+                <input type="number" id="blueBDice1"  maxlength="1" class="blueBDice" value= 0 readonly>
+                <input type="number" id="blueBDice2"  maxlength="1" class="blueBDice" value= 0 readonly>
+                <input type="number" id="blueBDice3"  maxlength="1" class="blueBDice" value= 0 readonly>
+                <input type="number" id="blueBDice4"  maxlength="1" class="blueBDice" value= 0 readonly>
+                <input type="number" id="blueBDice5"  maxlength="1" class="blueBDice" value= 0 readonly>
+                <input type="number" id="blueBDice6"  maxlength="1" class="blueBDice" value= 0 readonly>
+                <input type="number" id="blueBSuccess" class="success" maxlength="1" value= 0 readonly>
+                <input type="number" id="blueBsuper" class="ss" maxlength="1" value= 0 readonly>
+            </div>
+
+            <hr>
+
+
+            <button id="battle" name="battle" onclick="battle ()">Battle</button>
+
+        </section>
+        
+        <footer>
+            
+            <a href="./chars.html" target="_blank">How many do you discover?</a>             
+            <br><br>
+            There are 27 diferent classes to discover by combining skills. 
+
+        </footer>
+
+    </main>
+    <script src="./script.js"></script>
+    <script src="./battleFunctions.js"></script>
+</body>
+</html>

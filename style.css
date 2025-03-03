@@ -1,0 +1,173 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/1.jpg);
+    background-size: cover;
+        
+}
+
+#skillcap, #skillcap2 {
+    font-weight: bolder;
+    background-color: rgb(102, 43, 156);
+    color: white;
+}
+
+#displayRed1 {
+    background-color: darkred;
+}
+
+#displayGreen1 {
+    background-color: darkgreen;
+}
+
+#displayBlue1 {
+    background-color: darkblue;
+}
+
+.skill {
+    color: white;
+}
+
+footer {
+    font-weight: lighter;
+    font-size: small;
+    color: lightgrey;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+    display: grid;
+}
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    color: white;
+    background-color: rgba(00, 00, 00, 0.3);
+    border-radius: 10px;
+            
+}
+
+h2 {
+    color: white;
+}
+
+.submitedDisplay {
+    width: 30px;
+}
+
+input {
+    text-align: center;
+}
+#className {
+    width: 250px;
+}
+#displayName1 {
+    width: 250px;
+}
+#charA {
+    width: 300px;
+    height: 500px;
+    float: left;
+    display: block;
+    border-left: solid 1px lightgray;
+    border-top: solid 1px lightgray;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(00, 00, 00, 0.4);
+}
+#charB {
+    width: 300px;
+    height: 500px;
+    float: right;
+    border-right: solid 1px lightgray;
+    border-top: solid 1px lightgray;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+    background-color: rgba(00, 00, 00, 0.4);
+}
+
+#displayRed2 {
+    background-color: darkred;
+}
+
+#displayGreen2 {
+    background-color: darkgreen;
+}
+
+#displayBlue2 {
+    background-color: darkblue;
+}
+#resume {
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    display:grid;
+    margin: auto;
+    border-radius: 10px;
+    border-top: solid 1px lightgray;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(00, 00, 00, 0.4);
+}
+
+.redDice {
+    color: red;
+    width: 25px;
+    text-align: center;
+}
+
+.redBDice {
+    color: lightcoral;
+    width: 25px;
+    text-align: center;
+
+}
+.greenDice {
+    color: green;
+    width: 25px;
+    text-align: center;
+}
+
+.greenBDice {
+    color: lightgreen;
+    width: 25px;
+    text-align: center;
+
+}
+
+.blueDice {
+    color: blue;
+    width: 25px;
+    text-align: center;
+
+}
+.blueBDice {
+    color: lightskyblue;
+    width: 25px;
+    text-align: center;
+
+}
+
+.success {
+    width: 30px;
+    background-color: lightgray;
+}
+
+.ss {
+    width: 30px;
+    background-color: gold;
+    float: right;
+}
+
+label {
+    color: white;
+}
+
